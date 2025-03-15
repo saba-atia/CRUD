@@ -1,8 +1,9 @@
 <h1> Edit employee </h1>
 
 <form action="{{ route('employees.update',$employee->id) }}" method="POST">
- @method('PUT')
     @csrf
+
+    @method('PUT')
     <label for="name">Name</label>
     <input type="text" name="name" value="{{$employee->name}}" id="name" required>
     <br><br>

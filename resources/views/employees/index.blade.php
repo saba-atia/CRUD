@@ -1,5 +1,5 @@
 <h1>Show All Students</h1>
-<button><a href="{{ route('employees.create') }}">Add New</a></button><br /><br /><br />
+<button><a href="{{ route('employees.create') }}">Add New</a></button><br /><br /><br/>
 
 <table>
     <thead>
@@ -22,7 +22,6 @@
 <form action ="{{route('employees.destroy' , $employee ->id)}}" method="post">
  @method('DELETE')
     @csrf
- 
     <button type="submit">Delete</button>
 </form>
                 </td>

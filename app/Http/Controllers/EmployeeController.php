@@ -50,6 +50,7 @@ return view('employees.index' ,compact('employees'));
      */
     public function edit($id)
     {
+        
 $employee = Employee::findOrFail($id);
 
 
